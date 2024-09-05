@@ -104,12 +104,12 @@
 
 <ul id="markdown-toc">
   <li><a href="#quick-introduction" id="markdown-toc-quick-introduction">Quick Introduction</a></li>
-  <li><a href="#run-seahorse-on-your-machine" id="markdown-toc-run-seahorse-on-your-machine">Run Seahorse on Your Machine</a>    <ul>
+  <li><a href="#run-seahorse-on-your-machine" id="markdown-toc-run-seahorse-on-your-machine">Run Analytical Engine on Your Machine</a>    <ul>
       <li><a href="#mac-or-windows" id="markdown-toc-mac-or-windows">Mac or Windows</a></li>
       <li><a href="#linux" id="markdown-toc-linux">Linux</a></li>
     </ul>
   </li>
-  <li><a href="#use-seahorse" id="markdown-toc-use-seahorse">Use Seahorse</a>    <ul>
+  <li><a href="#use-seahorse" id="markdown-toc-use-seahorse">Use Analytical Engine</a>    <ul>
       <li><a href="#create-new-workflow-and-read-your-data" id="markdown-toc-create-new-workflow-and-read-your-data">Create New Workflow and Read Your Data</a></li>
       <li><a href="#transform-your-data" id="markdown-toc-transform-your-data">Transform Your Data</a></li>
     </ul>
@@ -119,17 +119,17 @@
 
 <h2 id="quick-introduction">Quick Introduction</h2>
 
-<p>Seahorse is a visual framework letting users create
+<p>Analytical Engine is a visual framework letting users create
 <a target="_blank" href="https://spark.apache.org/">Apache Spark</a> applications in a intuitive and interactive way.
 All while connected to any Spark Cluster (YARN, Mesos, Standalone) or to a bundled local Spark.</p>
 
 <p>For a more detailed overview go to the <a href="./index.html">Overview</a> section.</p>
 
-<h2 id="run-seahorse-on-your-machine">Run Seahorse on Your Machine</h2>
+<h2 id="run-seahorse-on-your-machine">Run Analytical Engine on Your Machine</h2>
 
 <h4 id="mac-or-windows">Mac or Windows</h4>
 
-<p>Seahorse for Mac
+<p>Analytical Engine for Mac
 <img class="img-responsive" style="display: inline-block; width:auto; height:15px;" src="./img/os_icons/osx.png" />
 and Windows
 <img class="img-responsive" style="display: inline-block; width:auto; height:15px;" src="./img/os_icons/windows.png" />
@@ -137,30 +137,30 @@ is distributed in the form of a Vagrant image.</p>
 
 <ol>
   <li>Install <strong>Vagrant (required)</strong>. You can find the Vagrant installation guide at <a href="https://www.vagrantup.com/docs/installation/">vagrantup.com</a>.</li>
-  <li>Download <code>Vagrantfile</code> from the <a href="https://get-seahorse.deepsense.ai/">get Seahorse page</a>.</li>
+  <li>Download <code>Vagrantfile</code> from the <a href="https://get-seahorse.deepsense.ai/">get Analytical Engine page</a>.</li>
   <li>Go to the catalog with <code>Vagrantfile</code> and run <code>vagrant up</code> from the command line.</li>
-  <li>Go to <a target="_blank" href="http://localhost:33321">http://localhost:33321</a> and start using Seahorse!</li>
+  <li>Go to <a target="_blank" href="http://localhost:33321">http://localhost:33321</a> and start using Analytical Engine!</li>
 </ol>
 
-<p>For more details and troubleshooting go to the <a href="./deployment.html#seahorse-standalone-as-a-vagrant-image">Seahorse Standalone Deployment mode page</a>.</p>
+<p>For more details and troubleshooting go to the <a href="./deployment.html#seahorse-standalone-as-a-vagrant-image">Analytical Engine Standalone Deployment mode page</a>.</p>
 
 <h4 id="linux">Linux</h4>
 
-<p>Seahorse for Linux
+<p>Analytical Engine for Linux
 <img class="img-responsive" style="display: inline-block; width:auto; height:15px;" src="./img/os_icons/linux.png" />
 is distributed in the form of docker images.</p>
 
 <ol>
   <li>Install <strong>Docker (required)</strong> and <strong>docker-compose (required)</strong>. You can find the Docker installation guide at <a href="https://docs.docker.com/engine/installation/">docs.docker.com/engine</a>
   and the docker-compose installation guide at <a href="https://docs.docker.com/compose/install/">docs.docker.com/compose</a>.</li>
-  <li>Download <code>docker-compose.yml</code> from the <a href="https://get-seahorse.deepsense.ai/">get Seahorse page</a>.</li>
+  <li>Download <code>docker-compose.yml</code> from the <a href="https://get-seahorse.deepsense.ai/">get Analytical Engine page</a>.</li>
   <li>Go to the catalog with <code>docker-compose.yml</code> file and run <code>docker-compose up</code> from the command line.</li>
-  <li>Go to <a target="_blank" href="http://localhost:33321">http://localhost:33321</a> and start using Seahorse!</li>
+  <li>Go to <a target="_blank" href="http://localhost:33321">http://localhost:33321</a> and start using Analytical Engine!</li>
 </ol>
 
-<p>For more details and troubleshooting go to <a href="./deployment.html#dockerized-seahorse">Seahorse Deployment page</a>.</p>
+<p>For more details and troubleshooting go to <a href="./deployment.html#dockerized-seahorse">Analytical Engine Deployment page</a>.</p>
 
-<h2 id="use-seahorse">Use Seahorse</h2>
+<h2 id="use-seahorse">Use Analytical Engine</h2>
 
 <p>In the following steps we will read some data.
 Then we will apply a simple transformation to the data.</p>
@@ -168,13 +168,13 @@ Then we will apply a simple transformation to the data.</p>
 <h4 id="create-new-workflow-and-read-your-data">Create New Workflow and Read Your Data</h4>
 
 <ul>
-  <li>Run Seahorse on your machine and go to <a target="_blank" href="http://localhost:33321">http://localhost:33321</a>.</li>
+  <li>Run Analytical Engine on your machine and go to <a target="_blank" href="http://localhost:33321">http://localhost:33321</a>.</li>
 </ul>
 
 <div class="align-left">
     <div class="img-responsive image-with-caption-container" style="width: 700px">
         <img class="img-responsive bordered-image" src="./img/seahorse_main.png" />
-        <em>The Seahorse home screen is a list of all workflows - initially filled with examples.</em>
+        <em>The Analytical Engine home screen is a list of all workflows - initially filled with examples.</em>
     </div>
 </div>
 
@@ -195,7 +195,7 @@ Then we will apply a simple transformation to the data.</p>
 <img class="img-responsive" style="display: inline-block; width:auto; height:15px;" src="./img/getting_started/start_editing.png" />
 from the top menu. It will start up an Apache Spark backend for your workflow session.</p>
   </li>
-  <li>Read some data into Seahorse:
+  <li>Read some data into Analytical Engine:
     <ul>
       <li>Drag and drop a <code>Node</code> from the toolbox on the left to the canvas, or just right-click on the canvas.</li>
       <li>Select <code>Input/Output</code> &gt; <code>Read DataFrame</code> from the operation selector.</li>
