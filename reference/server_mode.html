@@ -99,15 +99,15 @@
 
     <section style="padding-bottom: 100px;" class="documentation-content">
       
-      <h1 class="title">Seahorse in Server Mode</h1>
+      <h1 class="title">Analytical Engine in Server Mode</h1>
       
-      <p><a href="../deployment.html#dockerized-seahorse">Dockerized Seahorse</a>
+      <p><a href="../deployment.html#dockerized-seahorse">Dockerized Analytical Engine</a>
 is designed to work as a server application,
-which allows multiple users to access a single instance of Seahorse.</p>
+which allows multiple users to access a single instance of Analytical Engine.</p>
 
-<p>Enabling Server Mode requires telling Seahorse the IP address it should be available at.
+<p>Enabling Server Mode requires telling Analytical Engine the IP address it should be available at.
 By default, it listens only for local connections. Below you can find a comparison of relevant portions of the
-<code>docker-compose.yml</code> file with the assumption that Seahorse should be accessible under all IP addresses
+<code>docker-compose.yml</code> file with the assumption that Analytical Engine should be accessible under all IP addresses
 of the machine.</p>
 
 <div class="flex-adaptable-row-container">
@@ -138,15 +138,15 @@ of the machine.</p>
 </div>
 </div>
 
-<p>Additionally, to start Seahorse in daemon mode, you can run <code>docker-compose</code> with <code>-d</code> flag:</p>
+<p>Additionally, to start Analytical Engine in daemon mode, you can run <code>docker-compose</code> with <code>-d</code> flag:</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker-compose up -d</code></pre></figure>
 
-<p>This will start containers with Seahorse in the background.</p>
+<p>This will start containers with Analytical Engine in the background.</p>
 
-<p>Seahorse provides multi-user capability, useful in server mode. Multi-user allows creating workflows protected from modifications by other users.</p>
+<p>Analytical Engine provides multi-user capability, useful in server mode. Multi-user allows creating workflows protected from modifications by other users.</p>
 
-<p>Authorization service offers registration page to create a new account confirmed by sending an activation email. You have to log on to an account before using Seahorse.</p>
+<p>Authorization service offers registration page to create a new account confirmed by sending an activation email. You have to log on to an account before using Analytical Engine.</p>
 
 <p>To enable the authorization service, the <code>docker-compose.yml</code> file should be modified as described below.</p>
 
@@ -184,7 +184,7 @@ Link for changing the password will be sent to the address provided in <code>doc
     <span class="l-Scalar-Plain">...</span>
     <span class="l-Scalar-Plain">environment</span><span class="p-Indicator">:</span>
       <span class="l-Scalar-Plain">ENABLE_AUTHORIZATION</span><span class="p-Indicator">:</span> <span class="s">&#39;true&#39;</span>
-      <span class="l-Scalar-Plain">SEAHORSE_ADMIN_EMAIL</span><span class="p-Indicator">:</span> <span class="p-Indicator">{</span><span class="nv">your mail here</span><span class="p-Indicator">}</span>
+      <span class="l-Scalar-Plain">Analytical_Engine_ADMIN_EMAIL</span><span class="p-Indicator">:</span> <span class="p-Indicator">{</span><span class="nv">your mail here</span><span class="p-Indicator">}</span>
   <span class="l-Scalar-Plain">...</span>
   <span class="l-Scalar-Plain">proxy</span><span class="p-Indicator">:</span>
   <span class="l-Scalar-Plain">...</span>
